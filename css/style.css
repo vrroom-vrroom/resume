@@ -1,0 +1,348 @@
+@font-face {
+    font-family: 'Gilroy Regular';
+    src: url('/fonts/Gilroy-Regular.eot');
+    src: url('Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Gilroy-Regular.woff') format('woff'),
+    url('/fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Gilroy Bold';
+    src: url('/fonts/Gilroy-SemiBold.eot');
+    src: url('Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Gilroy-SemiBold.woff') format('woff'),
+    url('/fonts/Gilroy-SemiBold.woff') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+body {
+	padding: 0;
+    margin: 0;
+	font-family: 'Gilroy Regular';
+	font-style: normal;
+	font-weight: normal;
+    color: #000000;
+    background: #D3DCE0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+a{
+	text-decoration: none;
+    color: inherit;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Container */
+
+.container{
+    margin: 0px auto;
+    max-width: 1100px;
+    display: flex;
+}
+
+.contant_left, .contant_right{
+	width: 50%;
+	padding: 20px 20px;
+}
+
+/* Header */
+.header{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 30px;
+	background:#ffffff;
+	box-shadow: 0px 21px 50px rgba(40, 77, 108, 0.04);
+	border-radius: 0px 0px 60px 60px;
+}
+
+.header_contant{
+    display: flex;
+    width: 100%;
+    padding: 30px 0px;
+}
+
+.header_left img{
+    width: 165px;
+    border:#000 solid 1px;
+    border-radius: 120px;
+}
+
+.header_center{
+    margin: 0px 35px;
+}
+
+.header_center h3{
+	font-size: 36px;
+	line-height: 43px;
+	font-weight: 600;
+}
+
+.header_center p{
+    margin: 5px 0px;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 28px;
+	color: #B0B7BF;
+}
+
+.header_center a{
+    display: flex;
+}
+
+.header_center a>p{
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.header_icons{
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.header_icons a{
+    background: #959BA2;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background-clip: padding-box;
+    color: #fff;
+    text-align: center;
+    margin: 0px 5px;
+}
+
+.header_icons i{
+    width: 25px;
+    font-size: 25px;
+    padding-top: 8px;
+}
+
+.header_right{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+/*Header button */
+
+.header_btn{
+    width: 240px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #54BA4E;
+    box-shadow: 0px 21px 37px rgba(84, 186, 78, 0.26), inset 5px 11px 20px #79E973;
+    border-radius: 16px;
+
+}
+
+.header_btn p{
+    padding-left: 15px;
+    font-weight: 600;
+    font-size: 16px;
+
+    color: #FFFFFF;
+}
+
+.header_btn img{
+    width: 25px;
+}
+
+
+/* Main */
+.contant{
+	padding: 32px;
+	margin: 15px 0px;
+	background: #FFFFFF;
+	box-shadow: 0px 21px 50px rgba(40, 77, 108, 0.04);
+	border-radius: 36px;
+}
+
+.contant_works div{
+    margin: 20px 0px;
+}
+
+.contant_works>div>a>img{
+    width: 100%;
+}
+
+/* conntant skills */
+.contant_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contant_info p{
+    color: #000000;
+    opacity: 0.5;
+}
+
+.scale_grey{
+    width: 100%;
+    height: 21px;
+    background: #D9D9D9;
+}
+
+.skills{
+    margin: 15px 0px;
+}
+
+.skills div{
+    display: flex;
+    align-items: center;
+}
+
+.skills img{
+    width: 8px;
+}
+
+.skills p{
+    margin: 5px;
+}
+
+.skills:last-child{
+    margin: 15px 0px 0px;
+}
+/* conntant education  ПЕРЕНЕСТИ В КУРСЫ*/
+
+.contant_course_name>div{
+    display: flex;
+    align-items: center;
+}
+.contant_course_name>div>b{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.course_desk{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+
+    color: #222222;
+
+    width: 85px;
+    height: 26px;
+
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+}
+
+.course_desk img{
+    margin: 0px 5px 0px 0px;
+}
+
+.contant_course_name>div>p{
+    margin-left: auto;
+    color: #D9D9D9;
+}
+
+/* footer */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 100px 20px 10px;
+    border-radius: 12px;
+}
+
+.footer>p{
+    margin: 0px;
+}
+
+
+@media screen and (max-width: 990px){
+    .contant_course_name>div>p{
+        font-size: 11px;
+    }
+    .course_desk{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .header_right{
+        display: none;
+    }
+    .main{
+        flex-wrap: wrap;
+    }
+    .contant_left, .contant_right{
+        width: 100%;
+        padding: 0px 10px;
+    }
+    .contant_works{
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .header{
+        padding: 0px 10px;
+    }
+    .header_left img{
+        width: 140px;
+    }
+    .header_center h3{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .header_center p{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .header_center a>p{
+        font-size: 18px;
+        margin-left: 4px;
+    }
+    .header_icons a{
+        width: 30px;
+        height: 30px;
+    }
+    .header_icons i{
+        width: 19px;
+        font-size: 19px;
+        padding-top: 7px;
+    }
+    .header_contant{
+        padding: 15px 0px ;    
+    }
+    .header_center {
+        margin: 0px 10px
+    }
+    .contant{
+        padding: 20px;
+        margin: 10px 0px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+}
